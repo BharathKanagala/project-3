@@ -1,0 +1,17 @@
+.headd {
+    background-image: url("./img.jpg");
+    height: 100%;
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* fixed in viewport */
+  };
+
+  section{
+      margin: 1rem;
+      padding: 2rem;
+      background-color: red;
+      border-radius: 2em;
+  }
