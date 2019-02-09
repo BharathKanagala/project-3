@@ -1,5 +1,5 @@
 .headd {
-    background-image: url("./img.jpg");
+    background-image: url("./123.jpg");
     height: 100%;
     position: relative;
     opacity: 0.85;
@@ -7,11 +7,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* fixed in viewport */
-  };
+  }
 
-  section{
+  section {
       margin: 1rem;
       padding: 2rem;
-      background-color: red;
+      background-color: white;
       border-radius: 2em;
+      opacity: 0.85;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 50px !important;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
   }
