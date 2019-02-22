@@ -1,27 +1,24 @@
-<!DOCTYPE html>
 <html>
-    <head> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <title>Qunit</title>
+
+<head>
+    <meta charset="utf-8">
+    <title>Title of Test</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.22.0.css">
+    <script src="https://code.jquery.com/qunit/qunit-1.22.0.js"></script>
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script src="..\script\square.js" crossorigin="anonymous">
         
-    </head>
-    <body class="headd">
-        <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Bharath Kanagala</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="Square.html">Square</a></li>
-            <li><a href="qunit.html">Qunit</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </body>
-    </html>
+        QUnit.test("TestCase1",function(assert)
+        {
+            let firstvalue=square(10);
+          assert.equals(firstvalue,100,"Test Passed square of 10 is 100") ; 
+        });
+    </script>
+</body>
+
+</html>
