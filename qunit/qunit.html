@@ -11,12 +11,32 @@
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
 
-    <script src="..\script\square.js" crossorigin="anonymous">
-        
-        QUnit.test("TestCase1",function(assert)
-        {
-            let firstvalue=square(10);
-          assert.equals(firstvalue,100,"Test Passed square of 10 is 100") ; 
+    <script>
+        function square(value) {
+            value = parseInt(value);
+            console.log(value * value);
+            //document.getElementById('numberTwo').innerHTML = value * value;
+            return value * value;
+        }
+        QUnit.test("TestCase1", function (assert) {
+            let firstvalue = square(10);
+            assert.equal(firstvalue, 100, "Test Passed square of 10 is 100");
+        });
+        QUnit.test("TestCase2", function (assert) {
+            let firstvalue = square(-4);
+            assert.equal(firstvalue, 16, "Test Passed square of -4 is 16");
+        });
+        QUnit.test("TestCase3", function (assert) {
+            let firstvalue = square("6");
+            assert.equal(firstvalue, 36, "Test Passed square of 6 is 36");
+        });
+        QUnit.test("TestCase4", function (assert) {
+            let firstvalue = square(7);
+            assert.equal(firstvalue, 49, "Test Passed square of 7 is 49");
+        });
+        QUnit.test("Testcase5",function(assert) {
+            let firstvalue=square(8);
+            assert.equal(firstvalue,64,"Test passed square of 8 is 64");
         });
     </script>
 </body>

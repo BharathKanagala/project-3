@@ -3,7 +3,7 @@ document.getElementById('submit').addEventListener('click', joke);
 
 function joke() {
     $.ajax({
-        url: "http://api.icndb.com/jokes/random?limitTo=[nerdy]",
+        url: "https://api.icndb.com/jokes/random?limitTo=[nerdy]",
         cache: false,
         dataType: "json",
         type: "GET",
