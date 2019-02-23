@@ -1,4 +1,4 @@
-document.getElementById('submit').addEventListener('click', square(document.getElementById('numberOne').value));
+document.getElementById('submit').addEventListener('click', square);
 document.getElementById('submit').addEventListener('click', joke);
 
 function joke() {
@@ -17,7 +17,8 @@ function joke() {
     });
 }
 
-function square(value) {
+function square() {
+let value=document.getElementById('numberOne').value;
     value = parseInt(value);
     console.log(value * value);
     document.getElementById('numberTwo').innerHTML = value * value;
