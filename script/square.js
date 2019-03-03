@@ -1,5 +1,6 @@
 document.getElementById('submit').addEventListener('click', square);
 document.getElementById('submit').addEventListener('click', joke);
+document.getElementById('getlocal').addEventListener('click', get);
 
 function joke() {
     $.ajax({
@@ -22,5 +23,10 @@ let value=document.getElementById('numberOne').value;
     value = parseInt(value);
     console.log(value * value);
     document.getElementById('numberTwo').innerHTML = value * value;
+    localStorage.setItem("localvalues",value*value);
     return value * value;
+}
+function get(){
+document.getElementById('lc').value=localStorage.getItem("localvalues");
+
 }
